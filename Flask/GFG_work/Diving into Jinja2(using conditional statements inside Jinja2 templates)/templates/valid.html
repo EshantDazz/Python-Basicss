@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Hello User</title>
+    </head>
+    <body>
+        <h2> Let us check if you are valid for voting or not </h2>
+        <p> The age you have entered is {{age}}</p>
+        {% if age>=18 %}
+        <p> You are valid for voting</p>
+        {% else %}
+        <p>You are not valid for voting</p>
+        {%endif%}
+    </body>
+</html>
