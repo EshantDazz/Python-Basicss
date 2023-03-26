@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Home</title>
+    </head>
+    <body>
+        <div align="center">
+            <br><br><br>
+            <h2>
+                Enter the data
+            </h2>
+            <form method="POST",action="{{url_for('home')}}">
+
+                {{form.csrf_token}}
+                {{form.username.label}}
+                {{form.username}}
+                <br>
+                {{form.password.label}}
+                {{form.password}}
+                <input type="submit" value="Click!">
+            </form>
+        </div>
+    </body>
+    </html>
