@@ -7,13 +7,18 @@
 
         <h1>  PREDICTION :  </h1>
     
-    {%if data == 0%}
-    <h1>Iris setosa</h1>  
-    <img src='static\setosa.jpg'> 
+         {%if data == 0%}
+           <h1>Iris setosa</h1>
+           <img src='static\setosa.jpg'>
 
-    {%else%}
-    <h1>Iris versicolor</h1>
-    <img src='static\versicolor.jpg'>
+         {%elif data==1%}
+           <h1>Iris versicolor</h1>
+           <img src='static\versicolor.jpg'>
+
+         {%else%}
+            <h1>Iris viginica</h1>
+           <img src='static\viginica.jpg'>
+
     {%endif%}
 
 
