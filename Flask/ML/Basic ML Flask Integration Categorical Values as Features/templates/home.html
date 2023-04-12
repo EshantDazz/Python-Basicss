@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Convert Categorical Data to Numeric</title>
+</head>
+<body>
+    <h1>Convert Categorical Data to Numeric</h1>
+    <form method="POST" action="/">
+        <label for="color">Color:</label>
+        <select name="color" id="color">
+            {% for value in categorical_variables['color'] %}
+                <option value="{{ value }}">{{ value }}</option>
+            {% endfor %}
+        </select><br><br>
+        <label for="size">Size:</label>
+        <select name="size" id="size">
+            {% for value in categorical_variables['size'] %}
+                <option value="{{ value }}">{{ value }}</option>
+            {% endfor %}
+        </select><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
