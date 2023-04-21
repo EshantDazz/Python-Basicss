@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NLP Example</title>
+</head>
+<body>
+	<h1>NLP Example</h1>
+	<form method="POST" action="/process">
+		<label for="text">Enter some text:</label>
+		<input type="text" name="text" id="text">
+		<input type="submit" value="Process">
+	</form>
+	{% if entities %}
+		<h2>Entities found:</h2>
+		<ul>
+		{% for entity in entities %}
+			<li>{{ entity[0] }} - {{ entity[1] }}</li>
+		{% endfor %}
+		</ul>
+	{% endif %}
+</body>
+</html>
