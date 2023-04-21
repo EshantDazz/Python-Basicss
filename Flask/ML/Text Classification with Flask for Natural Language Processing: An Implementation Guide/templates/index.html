@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Text Classification</title>
+</head>
+<body>
+	<h1>Text Classification</h1>
+	<form action="/" method="post">
+		<label for="text">Enter text:</label>
+		<input type="text" name="text" id="text">
+		<input type="submit" value="Submit">
+	</form>
+	{% if predicted_label %}
+		<p>Predicted label: {{ predicted_label }}</p>
+	{% endif %}
+</body>
+</html>
