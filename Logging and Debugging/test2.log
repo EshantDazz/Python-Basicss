@@ -1,0 +1,6 @@
+2023-05-14 21:06:47,975 - DEBUG - checking for name is alphabet
+2023-05-14 21:06:47,975 - DEBUG - checking for full name
+2023-05-14 21:06:47,975 - ERROR - failed all checks
+2023-05-14 21:06:55,207 - DEBUG - checking for name is alphabet
+2023-05-14 21:06:55,207 - DEBUG - checking for full name
+2023-05-14 21:06:55,207 - ERROR - failed all checks
